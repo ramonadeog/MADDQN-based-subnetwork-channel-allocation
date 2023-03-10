@@ -1,0 +1,13 @@
+function f = objective_func(power_levels, channel_gains, num_users, scaling_factor)
+power_levels = round(power_levels*scaling_factor);
+all_powers = channel_gains; 
+receive_power = sum(all_powers.*eye(num_users));
+interference_power = all_powers.*(1-eye(num_users));
+f = 0;
+for n = 1:num_users
+    P = power_levels(n);
+    interfering_power = sum(interference_power(n, power_levels == P));
+    f = f + log2(1 + receive_power(n) / (interfering_power + db2pow(-114)));
+end
+f = -f/num_users;
+end
