@@ -1,8 +1,8 @@
 classdef subnetwork_classC
     properties
         num_of_subnetworks int16 = 10
-        deploy_length double = 40  
-        factoryArea double = [40, 40]
+        deploy_length double = 10  
+        factoryArea double = [10, 10]
         subnet_radius double = 3
         minD double = 1 
         minDistance double = 1*3
