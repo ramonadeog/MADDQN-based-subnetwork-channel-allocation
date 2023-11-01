@@ -342,11 +342,11 @@ end
 %save('ChannelAllocation1TestResuts4LargeNet','cap_cgc','cap_seq','cap_rdm','time_cgc','time_dqn','time_rdm','dqn_allocation','cgc_allocation')
 %%
 load('DataChannelAllocationD21nNeigh.mat')
-allR1 = allR*1.04;
+allR1 = allR;
 load('DataChannelAllocationD24nNeigh.mat')
-allR4 = allR*1.04;
+allR4 = allR;
 load('DataChannelAllocationD28Neigh.mat')
-allR8 = allR*1.04;
+allR8 = allR;
 tau1 = 20;
 tau2= 300;
 figure(); hold on
@@ -371,15 +371,15 @@ exportgraphics(tt,['LearningCurve',expName,'.pdf'])
 %%
 load('ChannelAllocation1TestResutsConst0Neighb.mat')
 capacity_cgc = cap_cgc;
-capacity_seq1 = cap_seq*1.02;
+capacity_seq1 = cap_seq;
 capacity_rdm = cap_rdm;
 load('ChannelAllocation1TestResuts4nNeighb.mat')
-capacity_seq4 = cap_seq*1.02;
+capacity_seq4 = cap_seq;
 % load('ChannelAllocation1TestResuts8Neighb.mat')
-% capacity_seq8 = cap_seq*1.02;
+% capacity_seq8 = cap_seq;
 %load('ChannelAllocation1TestResuts1.mat')
 load('ChannelAllocation1TestResuts1nNeighb.mat')
-capacity_seq4 = cap_seq*1.02;
+capacity_seq4 = cap_seq;
 %%
 [x1,c1] = ecdf(capacity_cgc(:));
 [x2,c2] = ecdf(capacity_rdm(:));
