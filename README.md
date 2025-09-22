@@ -73,4 +73,52 @@ cd MADDQN-based-subnetwork-channel-allocation
 ```
 ---
 
-##AAA
+## ⚙️ Configuration  
+
+You can tune the following parameters in the main script or config sections:  
+
+- **Number of subnetworks / agents**  
+- **Number of available channels**  
+- **Reward shaping parameters**  
+- **Learning rate, discount factor, ε-greedy schedule**  
+- **Training episodes / evaluation episodes**  
+
+---
+
+## 📊 Experiments & Results  
+
+The implementation can reproduce results from the WCNC 2023 paper:  
+
+- **Throughput vs. number of subnetworks**  
+- **Interference and spectral efficiency metrics**  
+- **Convergence curves of training episodes**  
+
+Figures are generated via `hBuildFigure.m`.  
+
+---
+
+## 🤝 Contributing  
+
+Contributions are welcome! You can help by:  
+
+- Fixing bugs and improving code efficiency  
+- Extending to other interference / channel models  
+- Adding new visualizations or logging utilities  
+- Porting to Python (e.g., with PyTorch / TensorFlow)  
+
+Please open an **issue** or submit a **pull request**.  
+
+---
+
+## 📜 License  
+
+This project is licensed under the **MIT License**.  
+See the [LICENSE](LICENSE) file for details.  
+
+---
+
+## 📧 Contact  
+
+- GitHub: [@ramonadeog](https://github.com/ramonadeog)  
+- For academic references, cite the WCNC 2023 paper included in the repo.  
+
