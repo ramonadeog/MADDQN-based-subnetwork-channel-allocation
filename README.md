@@ -71,3 +71,30 @@ Clone the repository and open in MATLAB:
 git clone https://github.com/ramonadeog/MADDQN-based-subnetwork-channel-allocation.git
 cd MADDQN-based-subnetwork-channel-allocation
 
+---
+## ▶️ Usage  
+
+1. Open MATLAB and set the working directory to the cloned repo.  
+2. Adjust simulation parameters inside `RLPowerControlDQNC.m`.  
+3. Run the main script:  
+
+```matlab
+run('RLPowerControlDQNC.m')
+
+---
+##⚙️ Configuration
+
+You can tune the following parameters in the main script or config sections:
+- Number of subnetworks / agents
+- Number of available channels
+- Reward shaping parameters
+- Learning rate, discount factor, ε-greedy schedule
+- Training episodes / evaluation episodes
+---
+##📊 Experiments & Results
+
+This implementation can reproduce experiments described in the WCNC 2023 paper:
+
+- Throughput vs. number of subnetworks
+- Spectral efficiency and interference metrics
+- Convergence curves of training episodes
