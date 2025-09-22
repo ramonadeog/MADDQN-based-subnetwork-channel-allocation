@@ -69,7 +69,8 @@ Clone the repository and open in MATLAB:
 
 ```bash
 git clone https://github.com/ramonadeog/MADDQN-based-subnetwork-channel-allocation.git
-cd MADDQN-based-subnetwork-channel-allocation´´´
+cd MADDQN-based-subnetwork-channel-allocation
 
 ---
 
+##AAA
