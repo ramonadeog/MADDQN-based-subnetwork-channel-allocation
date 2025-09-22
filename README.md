@@ -89,7 +89,7 @@ You can tune the following parameters in the main script or config sections:
 
 The implementation can reproduce results from the WCNC 2023 paper:  
 
-- **Throughput vs. number of subnetworks**  
+- **Rate vs. number of subnetworks**  
 - **Interference and spectral efficiency metrics**  
 - **Convergence curves of training episodes**  
 
